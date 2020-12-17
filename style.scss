@@ -1,0 +1,8 @@
+// Sass color list
+$colors: #568F0B #3D65DB #8DDB27 #DB3A12 #8F2B13;
+
+@for $i from 1 through length($colors) {
+  .box:nth-child(#{$i}n) {
+    background-color: nth($colors, $i);
+  }
+}
